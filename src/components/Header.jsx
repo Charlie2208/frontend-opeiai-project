@@ -43,7 +43,7 @@ const Header = ({ setListRoutines, setIsLoading }) => {
 
                 <form className="relative my-8  max-w-md" onSubmit={handleSubmit}>
                     <input value={inputValue} onChange={handleInputChange} className="indent-2 text-slate-900 py-4 pr-[4.5rem] rounded-sm bg-gray-200 w-full md:max-w-md focus:ring-primary outline-none focus:ring-1" 
-                    placeholder="Escribe que deseas ejercitar hoy día"
+                    placeholder="Ej: Dame una rutina HIIT"
                     type="text" />
                     <button type="submit" className="absolute bottom-2.5 right-2.5 bg-slate-800 text-white px-2 py-2 rounded-sm text-sm ">
                     <ArrowLongRightIcon className="h-6"/>
