@@ -1,13 +1,23 @@
 
 
-const ResultsCards = ({ resultado }) => {
+const ResultsCards = ({ listRoutines }) => {
+
+  let listArray = [];
+
+  if(listRoutines.length > 0 ){
+    listArray = listRoutines.split("\n")
+    .map((listRoutines, index) => {
+      return {
+        number: index + 1,
+        instruction: listRoutines.trim()
+      }
+    })
+    console.log(listArray)
+  }
   return (
-    <div className="w-full rounded shadow-sm">
-        <ul>
-            <li className="text-gray-900 text-xl">{resultado}</li>
-        </ul> 
-    </div>
+    <ul>
+      {listArray.map((item,index)=><li key={index}>{item.instruction}</li>)}
+    </ul>
   )
 }
-
 export default ResultsCards

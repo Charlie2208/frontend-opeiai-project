@@ -32,6 +32,7 @@ const Header = ({ setListRoutines, setIsLoading }) => {
     }
 
 
+
   return (
     <div className="bg-gradient-to-r from-slate-900 to-sky-600">
         <div className="container mx-auto max-w-5xl px-2 py-6">
